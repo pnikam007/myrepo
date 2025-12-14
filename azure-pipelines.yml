@@ -1,1 +1,14 @@
+trigger:
+- main
 
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  appname: 'my-web-app'
+  envname: 'production'
+
+steps:
+  - script: 
+    echo "Application Name: $(appname)"
+    echo "Env Name: $(envname)"
