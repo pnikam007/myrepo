@@ -9,6 +9,6 @@ variables:
   envname: 'production'
 
 steps:
-  - script: 
+  - script: | 
     echo "Application Name: $(appname)"
     echo "Env Name: $(envname)"
